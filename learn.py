@@ -164,3 +164,29 @@ print 'Function with args'
 hello('python', 'learning')
 print 'Function with kwargs'
 hello(language='python', action='learning')
+
+print '*** Classes ***'
+print 'simple class'
+class person():
+	name = 'Static'
+
+p = person()
+print '- ', p.name
+
+print 'Now overriding constructor'
+class person():
+	def __init__(self, name):
+		self.name = name
+
+p = person('phonnz')
+print '- ', p.name
+
+print 'Defining functions on objects'
+class person():
+	def __init__(self, name):
+		self.name = name
+	def initial(self):
+		print '- The initial of {name} is {initial}'.format(name=self.name, initial=self.name[:1])
+
+p = person('phonnz')
+p.initial()
