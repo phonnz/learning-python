@@ -102,3 +102,32 @@ print 'Clean sets'
 third = [0, 0, 3, 4, 5, 7, 9, 2, 4, 7, 8, 3]
 print third
 print list(set(third))
+
+print 'Working with slices'
+text = '-This is the complete string'
+print text
+print 'Now just the first 10 characters'
+print text[:10]
+print third
+print 'Slice of the first 5'
+print third[:5]
+print 'Slice of the last 5'
+print third[-5:]
+print 'Now try steps'
+print third
+print 'Jumping in the list in threes'
+print third[::3]
+
+print 'Delete elements'
+print third
+print 'Delete the first element'
+del third[0]
+print third
+print 'Delete the last element'
+third = third[:-1]
+print third
+print 'Delete from dictionary'
+print diccionario
+print 'Delete when key = c'
+del diccionario['c']
+print diccionario
