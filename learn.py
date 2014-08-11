@@ -181,7 +181,7 @@ class person():
 p = person('phonnz')
 print '- ', p.name
 
-print 'Defining functions on objects'
+print 'Defining functions in objects'
 class person():
 	def __init__(self, name):
 		self.name = name
