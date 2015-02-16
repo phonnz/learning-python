@@ -148,6 +148,7 @@ text = '{} is a {}'
 print text.format('leopard', 'feline')
 text = '{animal} is a {family}'
 print text.format(family = 'mammal', animal = 'human')
+print 'We can send complete dictionary if we are using named tags'
 data = {'animal':'Elephant', 'family':'mammal'}
 print text.format(**data)
 
