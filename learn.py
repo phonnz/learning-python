@@ -62,6 +62,10 @@ print 'Our fronts are:'
 for key, value in ninjas.items():
 	if value == 'front':
 		print key
+print 'But you can reduce the syntax'
+n = [key for key, value in ninjas.items() if value == 'front']
+print n
+
 
 print ' *** Merge lists *** '
 owners = ['information', 'sells', 'contact']
